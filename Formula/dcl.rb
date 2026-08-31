@@ -16,11 +16,7 @@ class Dcl < Formula
   end
 
   def install
-    puts "DEBUG: Current dir: #{Dir.pwd}"
-    puts "DEBUG: Contents: #{Dir.glob('*').inspect}"
-    extracted_dir = Dir["dcl-*-apple-darwin"].first
-    raise "extracted directory not found. Contents: #{Dir.glob('*').inspect}" unless extracted_dir
-    bin.install "#{extracted_dir}/dcl" => "dcl"
+    bin.install "dcl"
   end
 
   test do
