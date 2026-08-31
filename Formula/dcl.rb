@@ -1,17 +1,17 @@
 class Dcl < Formula
   desc "Create ready-to-use local clones of dev projects by symlinking shared dependencies"
   homepage "https://github.com/EArnold1/dcl"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/EArnold1/dcl/releases/download/v0.1.0/dcl-aarch64-apple-darwin.tar.gz"
-      sha256 "93a842f80f7ccd307e51e98df233cb3665dd9fce567e1398b7085836cb231cbc"
+      url "https://github.com/EArnold1/dcl/releases/download/v0.2.0/dcl-aarch64-apple-darwin.tar.gz"
+      sha256 "43280531dd5e3be1bd9b2f2f53a6e3fec5e40d077a24c8ea8b0202ec6d5bdc15"
     end
     on_intel do
-      url "https://github.com/EArnold1/dcl/releases/download/v0.1.0/dcl-x86_64-apple-darwin.tar.gz"
-      sha256 "71e45ef6e4c86090354c40d4e8efbbecc5986e7a8f899005f72c5422e7983c08"
+      url "https://github.com/EArnold1/dcl/releases/download/v0.2.0/dcl-x86_64-apple-darwin.tar.gz"
+      sha256 "d6681cfbc85e9455f6c2fed28a5e1f955b94b54beb1d5af348cfd247fbcae610"
     end
   end
 
