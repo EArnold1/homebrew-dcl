@@ -16,9 +16,11 @@ class Dcl < Formula
   end
 
   def install
-    dcl_path = Dir["**/dcl"].grep(/dcl-.*-apple-darwin\/dcl/).first
-    raise "dcl binary not found in archive" unless dcl_path
-    bin.install dcl_path => "dcl"
+    puts "DEBUG: Current dir: #{Dir.pwd}"
+    puts "DEBUG: Contents: #{Dir.glob('*').inspect}"
+    extracted_dir = Dir["dcl-*-apple-darwin"].first
+    raise "extracted directory not found. Contents: #{Dir.glob('*').inspect}" unless extracted_dir
+    bin.install "#{extracted_dir}/dcl" => "dcl"
   end
 
   test do
